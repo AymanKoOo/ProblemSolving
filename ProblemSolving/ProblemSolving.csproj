@@ -219,8 +219,6 @@
     <Content Include="Scripts\ace.js" />
     <Content Include="Scripts\mode-csharp.js" />
     <Content Include="Scripts\jquery.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\theme-twilight.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
