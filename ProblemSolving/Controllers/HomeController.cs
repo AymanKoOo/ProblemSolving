@@ -19,7 +19,7 @@ namespace WebApplication2.Controllers
         public ActionResult SubItemsV(int ProblemID)
         {
             var subitem = from a in db.SubProblems
-                          where ProblemID == a.id
+                          where a.problemId == ProblemID 
                           select a;
      
             if (subitem == null)

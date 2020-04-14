@@ -14,11 +14,11 @@
             <div class="col-md-4">
                 <div class="card">
                     <img class="card-img-top" src="@Url.Content("~/Img/aa.png")" style="width:102%" />
-                    <div class="card-body">
+                    <div class="card-body list-group-item-warning">
                         <h4 class="card-title">
                             @Html.DisplayFor(ModelItem => item.SubProbName)
                         </h4>
-                        <p class="card-text">@Html.DisplayFor(ModelItem => item.SubProbNameDescription)</p>
+                        <p class="list-group-item-warning">@Html.DisplayFor(ModelItem => item.SubProbNameDescription)</p>
 
                         @Html.ActionLink("Details", "Details", new { SubId = item.id }, new { @class = "btn btn-outline-secondary" })
 

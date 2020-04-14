@@ -47,7 +47,9 @@
         <div class="form-group">
             @Html.LabelFor(model => model.code, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.code, new { htmlAttributes = new { @class = "form-control" } })
+
+              <textarea class="form-control text-box single-line" data-val="true" data-val-required="The Enter Code field is required." id="code" name="code" type="text" value=""> </textarea>
+
                 @Html.ValidationMessageFor(model => model.code, "", new { @class = "text-danger" })
             </div>
         </div>

@@ -11,36 +11,23 @@
 
         <div class="row">
 
-            <div class="col-lg-6">
+            <div class="col-lg-5">
               
-                  <div id="editor" style="  position: inherit;
+                <div id="editor" style="  position: inherit;
 
                     width:600px;
-                    height:600px;
-            
-                    border: 3px solid #73AD21;">
+                    height:800px;
 
-                        function foo(items) {
-                    var x = "All this is syntax highlighted";
-                    return x;
-                    }
-                  </div>
+                    border: 3px solid #f9632e;">
+
+                    @Html.DisplayFor(model => model.code)
+                </div>
             </div>
 
-            <div class="col-lg-2">
-                <h1>@Html.DisplayFor(model => model.SubProbName)</h1>
-            </div>
-            <div class="col-lg-2">
-                <h1>$35/hr</h1>
-                <h1>@Html.DisplayFor(model => model.SubProbNameDescription)</h1>
-            </div>
-        
-            <div class="col-lg-2">
-
-                <img src="@Url.Content("~/Img/aa.png")" style="width:102%" />
-            </div>
-
-            
+            <div class="col-lg-7">
+                <h1 class="text-center">@Html.DisplayFor(model => model.SubProbName)</h1>
+                <p class="list-group-item-warning">@Html.DisplayFor(model => model.SubProbNameDescription)</p>
+                 
         </div>
     </div>
 
