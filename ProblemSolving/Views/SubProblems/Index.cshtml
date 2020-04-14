@@ -1,0 +1,52 @@
+﻿@model IEnumerable<ProblemSolving.Models.SubProblem>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.problem.ProblemName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SubProbName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SubProbNameDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.code)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.problem.ProblemName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubProbName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubProbNameDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.code)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

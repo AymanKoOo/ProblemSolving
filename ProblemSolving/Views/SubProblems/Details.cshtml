@@ -1,0 +1,51 @@
+﻿@model ProblemSolving.Models.SubProblem
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SubProblem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.problem.ProblemName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.problem.ProblemName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubProbName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubProbName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubProbNameDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubProbNameDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.code)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
