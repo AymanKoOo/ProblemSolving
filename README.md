@@ -1,4 +1,4 @@
-## ProblemSolving  APP contains many of problems on Datastructre and Algorthim
+## ProblemSolving  APP contains many problems on Datastructre and Algorthim
 ### (Soon More problems will be added)
 <img src="1.PNG">
 
